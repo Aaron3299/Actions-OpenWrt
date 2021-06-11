@@ -12,3 +12,7 @@ git clone https://github.com/garypang13/luci-app-dnsfilter package/luci-app-dnsf
 #git clone https://github.com/sirpdboy/NetSpeedTest package/NetSpeedTest
 #网络监控中文版
 git clone https://github.com/sirpdboy/luci-app-netdata package/luci-app-netdata
+#adguardhome
+git clone https://github.com/rufengsuixing/luci-app-adguardhome ./package/diy/luci-app-adguardhome
+#filebrowser
+git clone https://github.com/xiaozhuai/luci-app-filebrowser package/luci-app-filebrowser
