@@ -7,7 +7,7 @@
 #SSR
 git clone https://github.com/fw876/helloworld package/luci-app-ssr-plus
 #dnsfilter去广告
-#git clone https://github.com/garypang13/luci-app-dnsfilter package/luci-app-dnsfilter
+git clone https://github.com/garypang13/luci-app-dnsfilter package/luci-app-dnsfilter
 #网络速度测试
 #git clone https://github.com/sirpdboy/NetSpeedTest package/NetSpeedTest
 #网络监控中文版
@@ -17,4 +17,4 @@ git clone https://github.com/1287329/AdGuardHome package/adguardHome
 #git clone https://github.com/1287329/luci-app-adguardhome package/luci-app-adguardhome
 git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
 #filebrowser
-git clone https://github.com/xiaozhuai/luci-app-filebrowser package/diy/luci-app-filebrowser
+#git clone https://github.com/xiaozhuai/luci-app-filebrowser package/diy/luci-app-filebrowser
