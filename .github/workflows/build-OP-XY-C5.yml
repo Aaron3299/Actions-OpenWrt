@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build build-OP-XY-C5.yml
+name: 编译 XY-C5
 
 on:
   repository_dispatch:
