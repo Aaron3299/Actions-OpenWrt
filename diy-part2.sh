@@ -25,6 +25,8 @@ rm -rf package/lean/luci-app-netdata
 rm -rf package/lean/luci-theme-argon
 # 修改插件名字（修改名字后不知道会不会对插件功能有影响，自己多测试）
 #sed -i 's/"BaiduPCS Web"/"百度网盘"/g' package/lean/luci-app-baidupcs-web/luasrc/controller/baidupcs-web.lua
+#sed -i 's/services/nas/g' package/lean/luci-app-samba4/luasrc/controller/samba4.lua
+#sed -i 's/services/nas/g' feeds/luci/applications/luci-app-samba/luasrc/controller/samba.lua
 sed -i 's/cbi("qbittorrent"),_("qBittorrent")/cbi("qbittorrent"),_("BT下载")/g' package/lean/luci-app-qbittorrent/luasrc/controller/qbittorrent.lua
 sed -i 's/"KMS 服务器"/"KMS激活"/g' package/lean/luci-app-vlmcsd/po/zh-cn/vlmcsd.po
 sed -i 's/"管理权"/"改密码"/g' feeds/luci/modules/luci-base/po/zh-cn/base.po
