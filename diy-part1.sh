@@ -19,4 +19,4 @@ echo 'src-git helloworld https://github.com/fw876/helloworld' >> feeds.conf.defa
 #网络监控中文版
 git clone https://github.com/sirpdboy/luci-app-netdata package/luci-app-netdata
 #filebrowser
-git clone https://github.com/xiaozhuai/luci-app-filebrowser /package/luci-app-filebrowser
+git clone https://github.com/xiaozhuai/luci-app-filebrowser package/luci-app-filebrowser
