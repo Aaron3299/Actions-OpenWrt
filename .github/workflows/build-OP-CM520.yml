@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: 编译 XY-C5
+name: 编译 星际宝盒CM520
 
 on:
   repository_dispatch:
