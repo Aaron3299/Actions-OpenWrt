@@ -9,7 +9,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: 编译 OP-X64
+name: 编译 OP-X64-无NAS功能
 
 on:
   repository_dispatch:
