@@ -18,7 +18,7 @@ on:
       ssh:
         description: 'SSH 远程'
         required: false
-        default: 'true'
+        default: 'false'
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
