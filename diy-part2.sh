@@ -33,5 +33,3 @@ sed -i 's/cbi("qbittorrent"),_("qBittorrent")/cbi("qbittorrent"),_("BT下载")/g
 sed -i 's/"KMS 服务器"/"KMS激活"/g' feeds/luci/applications/luci-app-vlmcsd/po/zh-cn/vlmcsd.po
 sed -i 's/"管理权"/"改密码"/g' feeds/luci/modules/luci-base/po/zh-cn/base.po
 sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' package/feeds/luci/luci-app-turboacc/po/zh-cn/turboacc.po
-sed -i 's/VPN/services/g' feeds/luci/luci-app-ipsec-vpnd/luasrc/controller/ipsec-server.lua
-sed -i 's/vpn/services/g' feeds/luci/luci-app-ipsec-vpnd/luasrc/controller/ipsec-server.lua
