@@ -14,8 +14,8 @@ echo 'src-git 1287329 https://github.com/1287329/openwrt-diy' >> feeds.conf.defa
 #git clone https://github.com/liuran001/openwrt-packages package
 #SSR
 #git clone https://github.com/fw876/helloworld package/luci-app-ssr-plus
-#smartdns
-#git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
+smartdns
+git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
 #adguardhome
 #git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
 #网络监控中文版
