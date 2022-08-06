@@ -3,14 +3,12 @@
 # https://github.com/P3TERX/Actions-OpenWrt
 # File name: diy-part2.sh
 # 修改openwrt登陆地址,把下面的192.168.2.2修改成你想要的就可以了
-sed -i 's/192.168.1.1/192.168.2.2/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 #sed -i "/uci commit network/i\uci set network.lan.ipaddr='192.168.2.2'" package/lean/default-settings/files/zzz-default-settings                # IPv4 地址(openwrt后台地址)
 #sed -i "/uci commit network/i\uci set network.lan.netmask='255.255.255.0'" package/lean/default-settings/files/zzz-default-settings             # IPv4 子网掩码
 #sed -i "/uci commit network/i\uci set network.lan.gateway='192.168.2.1'" package/lean/default-settings/files/zzz-default-settings               # IPv4 网关
 #sed -i "/uci commit network/i\uci set network.lan.broadcast='192.168.2.255'" package/lean/default-settings/files/zzz-default-settings           # IPv4 广播
 #sed -i "/uci commit network/i\uci set network.lan.dns='192.168.2.1，180.76.76.76'" package/lean/default-settings/files/zzz-default-settings     # DNS(多个DNS要用空格分开)
-
-
 
 # 修改主机名字，把OpenWrt-123修改你喜欢的就行（不能纯数字或者使用中文）
 sed -i '/uci commit system/i\uci set system.@system[0].hostname='N3700'' package/lean/default-settings/files/zzz-default-settings
@@ -21,7 +19,7 @@ sed -i 's/luci-theme-bootstrap/luci-theme-netgear/g' feeds/luci/collections/luci
 # 设置密码为空（安装固件时无需密码登陆，然后自己修改想要的密码）
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
 #删除部分插件
-rm -rf package/lean/luci-app-netdata
+#rm -rf package/lean/luci-app-netdata
 rm -rf package/lean/luci-theme-argon
 rm -rf package/lean/luci-app-uugamebooster
 rm -rf package/lean/luci-app-usb-printer
@@ -29,7 +27,7 @@ rm -rf package/lean/luci-app-usb-printer
 #sed -i 's/"BaiduPCS Web"/"百度网盘"/g' package/lean/luci-app-baidupcs-web/luasrc/controller/baidupcs-web.lua
 #sed -i 's/services/nas/g' feeds/luci/applications/luci-app-samba4/luasrc/controller/samba4.lua
 sed -i 's/services/nas/g' feeds/luci/applications/luci-app-samba/luasrc/controller/samba.lua
-sed -i 's/cbi("qbittorrent"),_("qBittorrent")/cbi("qbittorrent"),_("BT下载")/g' feeds/luci/applications/luci-app-qbittorrent/luasrc/controller/qbittorrent.lua
+#sed -i 's/cbi("qbittorrent"),_("qBittorrent")/cbi("qbittorrent"),_("BT下载")/g' feeds/luci/applications/luci-app-qbittorrent/luasrc/controller/qbittorrent.lua
 sed -i 's/"KMS 服务器"/"KMS激活"/g' feeds/luci/applications/luci-app-vlmcsd/po/zh-cn/vlmcsd.po
 sed -i 's/"管理权"/"改密码"/g' feeds/luci/modules/luci-base/po/zh-cn/base.po
 sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' package/feeds/luci/luci-app-turboacc/po/zh-cn/turboacc.po
