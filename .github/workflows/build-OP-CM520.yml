@@ -120,14 +120,21 @@ jobs:
         name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: openwrt/bin
 
-    - name: 整理编译文件（Organize files）
+    - name: 整理编译文件Organize files
       id: organize
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
         cd openwrt/bin/targets/*/*
         rm -rf packages
+        rm -rf config.buildinfo
+        rm -rf feeds.buildinfo
+        rm -rf openwrt-ipq40xx-mobipromo_cm520-79f-initramfs-fit-zImage.itb
+        rm -rf openwrt-ipq40xx-mobipromo_cm520-79f.manifest
+        rm -rf sha256sums
+        rm -rf version.buildinfo
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
-
+        echo "::set-output name=status::success"
+    
     - name: 上传固件
       uses: actions/upload-artifact@main
       if: steps.organize.conclusion == 'success' && !cancelled()
