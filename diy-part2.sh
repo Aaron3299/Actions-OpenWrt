@@ -18,6 +18,8 @@ sed -i 's/OpenWrt /不言° $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g' package/l
 sed -i 's/luci-theme-bootstrap/luci-theme-netgear/g' feeds/luci/collections/luci/Makefile
 # 设置密码为空（安装固件时无需密码登陆，然后自己修改想要的密码）
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
+#活动连接数
+sed -i 's/16384/65536/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
 #删除部分插件
 #rm -rf package/lean/luci-app-netdata
 rm -rf package/lean/luci-theme-argon
@@ -25,7 +27,7 @@ rm -rf package/lean/luci-app-uugamebooster
 rm -rf package/lean/luci-app-usb-printer
 # 修改插件名字（修改名字后不知道会不会对插件功能有影响，自己多测试）
 #sed -i 's/"BaiduPCS Web"/"百度网盘"/g' package/lean/luci-app-baidupcs-web/luasrc/controller/baidupcs-web.lua
-#sed -i 's/services/nas/g' feeds/luci/applications/luci-app-samba4/luasrc/controller/samba4.lua
+sed -i 's/services/nas/g' feeds/luci/applications/luci-app-samba4/luasrc/controller/samba4.lua
 sed -i 's/services/nas/g' feeds/luci/applications/luci-app-samba/luasrc/controller/samba.lua
 #sed -i 's/cbi("qbittorrent"),_("qBittorrent")/cbi("qbittorrent"),_("BT下载")/g' feeds/luci/applications/luci-app-qbittorrent/luasrc/controller/qbittorrent.lua
 sed -i 's/"KMS 服务器"/"KMS激活"/g' feeds/luci/applications/luci-app-vlmcsd/po/zh-cn/vlmcsd.po
