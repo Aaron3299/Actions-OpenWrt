@@ -9,7 +9,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: 编译 OP-X64-Samba
+name: 编译 OP-X64-Samba4
 
 on:
   repository_dispatch:
