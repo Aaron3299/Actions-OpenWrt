@@ -127,7 +127,8 @@ jobs:
         cd openwrt/bin/targets/*/*
         rm -rf packages
         rm -rf openwrt-x86-64-generic-kernel.bin
-        rm -rf openwrt-x86-64-generic-squashfs-rootfs.img
+        rm -rf openwrt-x86-64-generic-squashfs-rootfs.img.gz
+        rm -rf openwrt-x86-64-generic-squashfs-combined-efi.vmdk
         rm -rf openwrt-x86-64-generic.manifest
         rm -rf sha256sums
         rm -rf version.buildinfo
