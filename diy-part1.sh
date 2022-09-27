@@ -11,7 +11,7 @@
 #SSR
 #git clone https://github.com/fw876/helloworld package/diy/luci-app-ssr-plus
 git clone https://github.com/xiaorouji/openwrt-passwall package/diy/openwrt-passwall
-git clone https://github.com/kiddin9/openwrt-bypass package/diy/openwrt-bypass
+#git clone https://github.com/kiddin9/openwrt-bypass package/diy/openwrt-bypass
 git clone https://github.com/kiddin9/luci-app-dnsfilter package/diy/luci-app-dnsfilter
 git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/diy/luci-app-passwall
 #git clone https://github.com/sbwml/luci-app-alist package/diy/luci-app-alist
