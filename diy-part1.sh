@@ -9,7 +9,7 @@
 #echo 'src-git small https://github.com/kenzok8/small' >> feeds.conf.default
 #echo 'src-git 1287329 https://github.com/1287329/openwrt-diy' >> feeds.conf.default
 #SSR
-git clone https://github.com/fw876/helloworld package/diy/luci-app-ssr-plus
+#git clone https://github.com/fw876/helloworld package/diy/luci-app-ssr-plus
 git clone https://github.com/xiaorouji/openwrt-passwall package/diy/openwrt-passwall
 git clone https://github.com/kiddin9/openwrt-bypass package/diy/openwrt-bypass
 git clone https://github.com/kiddin9/luci-app-dnsfilter package/diy/luci-app-dnsfilter
