@@ -21,7 +21,7 @@ git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/diy/luci
 #svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2 package/diy/luci-app-passwall2
 #svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-passwall package/diy/luci-app-passwall
 #svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-passwall2 package/diy/luci-app-passwall2
-#svn export https://github.com/kiddin9/openwrt-packages/trunk/alist package/diy/alist
-#svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-alist package/diy/luci-app-alist
-#svn export https://github.com/kiddin9/openwrt-packages/trunk/adbyby package/diy/adbyby
-#svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-adbyby package/diy/luci-app-adbyby
+svn export https://github.com/kiddin9/openwrt-packages/trunk/alist package/diy/alist
+svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-alist package/diy/luci-app-alist
+svn export https://github.com/kiddin9/openwrt-packages/trunk/gowebdav package/diy/gowebdav
+svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-gowebdav package/diy/luci-app-gowebdav
