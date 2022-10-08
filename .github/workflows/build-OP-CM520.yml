@@ -126,8 +126,8 @@ jobs:
       run: |
         cd openwrt/bin/targets/*/*
         rm -rf packages
-        rm -rf config.buildinfo
-        rm -rf feeds.buildinfo
+        #rm -rf config.buildinfo
+        #rm -rf feeds.buildinfo
         rm -rf openwrt-ipq40xx-mobipromo_cm520-79f-initramfs-fit-zImage.itb
         rm -rf openwrt-ipq40xx-mobipromo_cm520-79f.manifest
         rm -rf sha256sums
