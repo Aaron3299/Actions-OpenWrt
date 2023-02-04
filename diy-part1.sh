@@ -19,12 +19,11 @@
 #svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-passwall2 package/diy/luci-app-passwall2
 #svn export https://github.com/kiddin9/openwrt-packages/trunk/alist package/diy/alist
 #svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-alist package/diy/luci-app-alist
-svn export https://github.com/kenzok8/openwrt-packages/trunk/luci-app-smartdns
 git clone https://github.com/kiddin9/luci-app-dnsfilter package/diy/luci-app-dnsfilter
 git clone https://github.com/xiaorouji/openwrt-passwall package/diy/openwrt-passwall
 git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/diy/luci-app-passwall
 git clone https://github.com/rufengsuixing/luci-app-adguardhome package/diy/luci-app-adguardhome
+svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-alist package/diy/luci-app-alist
 svn export https://github.com/kiddin9/openwrt-packages/trunk/gowebdav package/diy/gowebdav
 svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-gowebdav package/diy/luci-app-gowebdav
-svn export https://github.com/kiddin9/openwrt-packages/trunk/alist package/diy/alist
-svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-alist package/diy/luci-app-alist
+svn export https://github.com/kenzok8/openwrt-packages/trunk/luci-app-smartdns package/diy/luci-app-smartdns
