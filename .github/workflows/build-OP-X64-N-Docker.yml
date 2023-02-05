@@ -39,10 +39,9 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-    - name: 准备结束
+    - name: Checkout
       uses: actions/checkout@main
-
-    - name: 部署编译环境
+    - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
       run: |
@@ -51,8 +50,7 @@ jobs:
         sudo timedatectl set-timezone $TZ
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
-    
-    - name: 下载L大源代码
+    - name: 下载源码（Clone source code）
       working-directory: /workdir
       run: |
         df -hT $PWD
