@@ -38,7 +38,7 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-    - name: 准备结束（Checkout）
+    - name: 准备结束Checkout
       uses: actions/checkout@main
     - name: Initialization environment
       env:
@@ -49,8 +49,14 @@ jobs:
         sudo timedatectl set-timezone $TZ
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
+    - name: Clone source code
+      working-directory: /workdir
+      run: |
+        df -hT $PWD
+        git clone $REPO_URL -b $REPO_BRANCH openwrt
+        ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
     
-	- name: 下载L大源代码
+    - name: 读取缓存
       working-directory: /workdir
       run: |
         df -hT $PWD
