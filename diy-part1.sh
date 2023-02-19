@@ -10,9 +10,9 @@
 #echo 'src-git 1287329 https://github.com/1287329/openwrt-diy' >> feeds.conf.default
 
 #git clone https://github.com/fw876/helloworld package/diy/luci-app-ssr-plus
+#svn export https://github.com/kiddin9/openwrt-packages/trunk/gowebdav package/diy/gowebdav
+#svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-gowebdav package/diy/luci-app-gowebdav
 svn export https://github.com/kiddin9/openwrt-packages/trunk/adguardhome package/diy/adguardhome
 svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-adguardhome package/diy/luci-app-adguardhome
-svn export https://github.com/kiddin9/openwrt-packages/trunk/gowebdav package/diy/gowebdav
-svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-gowebdav package/diy/luci-app-gowebdav
 svn export https://github.com/kenzok8/openwrt-packages/trunk/luci-app-dnsfilter package/diy/luci-app-dnsfilter
 svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-openclash package/diy/luci-app-openclash
