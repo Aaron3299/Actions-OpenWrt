@@ -13,5 +13,5 @@
 #svn export https://github.com/kiddin9/openwrt-packages/trunk/gowebdav package/diy/gowebdav
 #svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-gowebdav package/diy/luci-app-gowebdav
 svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-adguardhome package/diy/luci-app-adguardhome
-svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-openclash package/diy/luci-app-openclash
+#svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-openclash package/diy/luci-app-openclash
 #svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-dnsfilter package/diy/luci-app-dnsfilter
