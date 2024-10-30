@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: 编译X64-NAS_WEb
+name: 编译X64-NAS_TM
 
 on:
   repository_dispatch:
