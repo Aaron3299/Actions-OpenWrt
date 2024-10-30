@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: 编译 X64-NAS-Docker
+name: 编译X64-NAS_Docker
 
 on:
   repository_dispatch:
