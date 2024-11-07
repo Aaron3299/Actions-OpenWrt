@@ -1,11 +1,8 @@
 #!/bin/bash
 
 # This is free software, licensed under the MIT License.
-# See /LICENSE for more information.
-#
 # File name: diy-part1.sh
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
-cd openwrt
 rm -rf feeds/luci/applications/luci-app-transmission
 rm -rf feeds/packages/net/transmission
 rm -rf feeds/packages/net/transmission-web-control
