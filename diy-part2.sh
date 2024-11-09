@@ -33,7 +33,12 @@ sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=165535' packag
 sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' package/feeds/luci/luci-app-turboacc/po/zh-cn/turboacc.po
 
 #  10-删除部分插件
-#rm -rf package/lean/luci-app-netdata
+rm -rf package/lean/luci-app-netdata
 rm -rf package/lean/luci-theme-argon
 rm -rf package/lean/luci-app-uugamebooster
 rm -rf package/lean/luci-app-usb-printer
+rm -rf feeds/luci/applications/luci-app-transmission
+rm -rf feeds/packages/net/transmission
+rm -rf feeds/packages/net/transmission-web-control
+rm -rf feeds/packages/net/msd_lite
+rm -rf feeds/luci/applications/luci-app-msd_lite
