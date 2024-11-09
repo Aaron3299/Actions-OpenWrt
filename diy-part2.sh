@@ -5,7 +5,8 @@
 #sed -i 's/luci-theme-bootstrap/luci-theme-netgear/g' feeds/luci/collections/luci/Makefile
 
 # 2-设置管理地址
-sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.9.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/luci2/bin/config_generate
 
 # 3-设置密码为空
 sed -i '/CYXluq4wUazHjmCDBCqXF/d' package/lean/default-settings/files/zzz-default-settings
@@ -31,6 +32,7 @@ sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=165535' packag
 # 9-修改插件名字（修改名字后不知道会不会对插件功能有影响，自己多测试）
 #sed -i 's/services/nas/g' feeds/luci/applications/luci-app-samba4/luasrc/controller/samba4.lua
 sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' package/feeds/luci/luci-app-turboacc/po/zh-cn/turboacc.po
+sed -i 's/nas/services/g' feeds/luci/applications/luci-app-qbittorrent/root/usr/share/luci/menu.d/luci-app-qbittorrent.json
 
 #  10-删除部分插件
 rm -rf package/lean/luci-app-netdata
